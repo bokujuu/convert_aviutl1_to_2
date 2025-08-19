@@ -16,11 +16,6 @@ AviUtl1 → AviUtl2 スクリプト移植ツール
 ```powershell
 python temp/convert_aviutl1_to_2.py "ScriptPath1.anm" "ScriptPath2.anm" --outdir converted
 ```
-- フォルダ内を一括変換:
-```powershell
-Get-ChildItem Script_Aviutl1 -Recurse -Include *.anm,*.obj,*.scn,*.cam,*.tra |
-  % { python temp/convert_aviutl1_to_2.py $_.FullName --outdir converted }
-```
 
 出力
 - `converted/` 以下に `*.anm2/*.obj2/*.scn2/*.cam2/*.tra2`（UTF-8, LF）として生成されます。
