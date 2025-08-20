@@ -5,7 +5,7 @@ AviUtl1 → AviUtl2 スクリプト移植ツール
 構成
 - `docs/aviutl1_to_2_diff.md`: AviUtl1 と AviUtl2 の仕様差分と移植指針
 - `docs/aviutl1_to_2_converter.md`: 変換スクリプトの概要とルール
-- `temp/convert_aviutl1_to_2.py`: 変換スクリプト本体（Python）
+- `convert_aviutl1_to_2.py`: 変換スクリプト本体（Python）
 
 前提
 - Windows + Python 3.10 以降
@@ -14,7 +14,7 @@ AviUtl1 → AviUtl2 スクリプト移植ツール
 使い方（例）
 - 単体/複数ファイルの変換:
 ```powershell
-python temp/convert_aviutl1_to_2.py "ScriptPath1.anm" "ScriptPath2.anm" --outdir converted
+python convert_aviutl1_to_2.py "ScriptPath1.anm" "ScriptPath2.anm" --outdir converted
 ```
 
 出力
